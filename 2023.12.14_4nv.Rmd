@@ -51,13 +51,13 @@ knitr::include_graphics("images/02_nichols.jpg")
 - lingconlab.ru
 - 22 устных корпуса диалектов русского языка
 - 8 устных корпусов русского языка билингвов
-- 10 корпусов малых языков
-- другие
+- 12 корпусов малых языков
+- другие ресурсы
     - словари (мегебский, рутульский, тукитинский, хваршинский, даргинский)
     - Типологический атлас языков Дагестана
     - Атлас многоязычия в Дагестане
-    - Атлас рутульских диалектов
-    - Корпус Просодии Русских Диалектов (ПРуД)
+    - Атлас диалектов рутульского языка
+    - Корпус просодии русских диалектов (ПРуД)
     - ...
 
 ## 22 устных диалектных корпуса
@@ -211,6 +211,7 @@ knitr::include_graphics("images/nastya.jpg")
 knitr::include_graphics("images/severina.jpg")
 ```
 
+- мы надеемся, что с можем продолжить сотрудничать с коллегами в 2024-2026
 
 ## Зеркальная лаборатория с ЮФУ
 
@@ -231,7 +232,7 @@ knitr::include_graphics("images/06_digital_chekhov.png")
 
 ## Устный корпус донских диалектов
 
-- http://lingconlab.ru/don_rnd
+- <http://lingconlab.ru/don_rnd>
 
 ```{r, out.width="98%"}
 knitr::include_graphics("images/don1.png")
@@ -240,7 +241,7 @@ knitr::include_graphics("images/don1.png")
 
 ## Устный корпус донских диалектов
 
-- http://lingconlab.ru/don_rnd
+- <http://lingconlab.ru/don_rnd>
 
 ```{r, out.width="98%"}
 knitr::include_graphics("images/don2.png")
@@ -248,13 +249,15 @@ knitr::include_graphics("images/don2.png")
 
 ## Русский учебный корпус
 
+- <http://www.web-corpora.net/RLC>
+
 ```{r, out.width="98%"}
 knitr::include_graphics("images/RLC.png")
 ```
 
 ## Создание тренажеров
 
-- https://agricolamz.github.io/language_of_science_website/
+- <https://agricolamz.github.io/language_of_science_website/>
 
 ```{r, out.width="98%"}
 knitr::include_graphics("images/economy.png")
@@ -270,10 +273,33 @@ knitr::include_graphics("images/economy.png")
 
 ## Изучение хантыйского языка
 
-- профиль «Хантыйская филология»
-- профиль «Искусственный интеллект в моделировании речевой деятельности»
+- профиль магистратуры «Хантыйская филология»
+- профиль магистратуры «Искусственный интеллект в моделировании речевой деятельности»
+- Научно-исследовательские лаборатория этнофилологии народов Севера
+- Научно-исследовательские лаборатория лингвопедагогики и проблемного обучения
 
-## Хантыйский и мансийский языки
+## Изучение хантыйского языка
+
+```{r, out.width="98%"}
+knitr::include_graphics("images/khanti.png")
+```
+
+## Изучение хантыйского языка
+
+```{r, out.width="98%"}
+read_csv("data/vestnik.csv") |> 
+  mutate(date = lubridate::make_date(year = year, month = month, day = day)) |> 
+  ggplot(aes(date))+
+  geom_dotplot()+
+  theme_minimal()+
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.title = element_blank())+
+  labs(title = "Упоминание хантыйского языка и культуры в Нижневартовский Филологический Вестнике",
+       caption = "в промежуток с 2016 по сегодняшний день")
+```
+
+## Хантыйские корпуса
 
 - Ob-Ugric database, Германия, Университет Людвига-Максимилиана, Мюнхен. Е. К. Скрибник
 - <https://www.babel.gwi.uni-muenchen.de/> \pause
@@ -281,8 +307,13 @@ knitr::include_graphics("images/economy.png")
 - <http://lingvodoc.ispras.ru/corpora_all?all=&language=508%2C44> \pause
 - NorthEuralex, Германия, Университет Тюбингена, Йоханнес Деллерт
 - <https://link.springer.com/article/10.1007/s10579-019-09480-6> \pause
-- UraTyp -- типологический ресурс из института Макса Планка
+- UraTyp -- типологический ресурс от института Макса Планка
 - <https://uralic.clld.org/languages>
+
+## Хантыйские корпуса
+
+- устные диалогические корпуса
+- акцент именно на сургутский диалект хантыйского, которым занимаются в НВГУ
 
 ## {}
 
